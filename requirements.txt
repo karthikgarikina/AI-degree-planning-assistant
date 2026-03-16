@@ -1,0 +1,10 @@
+langgraph
+langchain
+langchain-community
+langchain-core
+pydantic
+loguru
+pdfplumber
+requests
+python-dotenv
+tqdm

@@ -1,0 +1,28 @@
+[
+{
+ "course_code":"CS301",
+ "title":"Algorithms",
+ "credits":3,
+ "schedule":[["Mon","13:00","14:30"],["Wed","13:00","14:30"]],
+ "tags":["Algorithms"],
+ "semester":["Fall"]
+},
+
+{
+ "course_code":"CS450",
+ "title":"Machine Learning",
+ "credits":3,
+ "schedule":[["Tue","14:00","15:30"],["Thu","14:00","15:30"]],
+ "tags":["AI","ML"],
+ "semester":["Fall"]
+},
+
+{
+ "course_code":"CS460",
+ "title":"Deep Learning",
+ "credits":3,
+ "schedule":[["Mon","10:30","12:00"],["Wed","10:30","12:00"]],
+ "tags":["AI"],
+ "semester":["Spring"]
+}
+]
