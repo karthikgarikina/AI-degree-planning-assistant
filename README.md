@@ -158,9 +158,7 @@ Spring 2027:
 
 ## 🎥 Demo Video
 
-```
 https://www.youtube.com/watch?v=5SZTjTo7M2s
-```
 
 ---
 
