@@ -7,4 +7,3 @@ loguru
 pdfplumber
 requests
 python-dotenv
-tqdm

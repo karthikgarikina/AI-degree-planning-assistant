@@ -1,28 +1,172 @@
 [
-{
- "course_code":"CS301",
- "title":"Algorithms",
- "credits":3,
- "schedule":[["Mon","13:00","14:30"],["Wed","13:00","14:30"]],
- "tags":["Algorithms"],
- "semester":["Fall"]
-},
-
-{
- "course_code":"CS450",
- "title":"Machine Learning",
- "credits":3,
- "schedule":[["Tue","14:00","15:30"],["Thu","14:00","15:30"]],
- "tags":["AI","ML"],
- "semester":["Fall"]
-},
-
-{
- "course_code":"CS460",
- "title":"Deep Learning",
- "credits":3,
- "schedule":[["Mon","10:30","12:00"],["Wed","10:30","12:00"]],
- "tags":["AI"],
- "semester":["Spring"]
-}
+  {
+    "course_code": "CS101",
+    "title": "Introduction to Programming",
+    "credits": 3,
+    "schedule": [["Mon", "09:00", "10:15"], ["Wed", "09:00", "10:15"]],
+    "description": "Problem solving and Python programming fundamentals.",
+    "prerequisites": [],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["programming", "foundations", "python"]
+  },
+  {
+    "course_code": "CS102",
+    "title": "Data Structures",
+    "credits": 4,
+    "schedule": [["Tue", "09:00", "10:45"], ["Thu", "09:00", "10:45"]],
+    "description": "Linear and non-linear data structures with complexity analysis.",
+    "prerequisites": ["CS101"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["data structures", "algorithms"]
+  },
+  {
+    "course_code": "CS220",
+    "title": "Discrete Structures",
+    "credits": 3,
+    "schedule": [["Mon", "11:00", "12:15"], ["Wed", "11:00", "12:15"]],
+    "description": "Logic, proof techniques, sets, graphs, and combinatorics.",
+    "prerequisites": ["CS101"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["discrete math", "logic"]
+  },
+  {
+    "course_code": "CS230",
+    "title": "Computer Systems",
+    "credits": 3,
+    "schedule": [["Tue", "14:00", "15:15"], ["Thu", "14:00", "15:15"]],
+    "description": "Core systems concepts for architecture and operating systems.",
+    "prerequisites": ["CS102"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["systems", "architecture"]
+  },
+  {
+    "course_code": "MATH101",
+    "title": "Calculus I",
+    "credits": 4,
+    "schedule": [["Mon", "13:00", "14:15"], ["Wed", "13:00", "14:15"]],
+    "description": "Limits, derivatives, and introductory integration.",
+    "prerequisites": [],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["math", "calculus"]
+  },
+  {
+    "course_code": "MATH201",
+    "title": "Linear Algebra",
+    "credits": 3,
+    "schedule": [["Tue", "11:00", "12:15"], ["Thu", "11:00", "12:15"]],
+    "description": "Matrices, vector spaces, eigenvalues, and linear transformations.",
+    "prerequisites": ["MATH101"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["math", "linear algebra"]
+  },
+  {
+    "course_code": "STAT210",
+    "title": "Probability and Statistics",
+    "credits": 3,
+    "schedule": [["Mon", "15:00", "16:15"], ["Wed", "15:00", "16:15"]],
+    "description": "Probability, estimation, and statistical inference for computing.",
+    "prerequisites": ["MATH101"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["statistics", "probability", "data"]
+  },
+  {
+    "course_code": "AI201",
+    "title": "Introduction to Artificial Intelligence",
+    "credits": 3,
+    "schedule": [["Tue", "16:00", "17:15"], ["Thu", "16:00", "17:15"]],
+    "description": "Search, planning, knowledge representation, and basic machine learning.",
+    "prerequisites": ["CS102", "MATH201", "STAT210"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["ai", "artificial intelligence", "foundations"]
+  },
+  {
+    "course_code": "AI301",
+    "title": "Machine Learning",
+    "credits": 3,
+    "schedule": [["Tue", "10:30", "12:00"], ["Thu", "10:30", "12:00"]],
+    "description": "Supervised and unsupervised learning with model evaluation.",
+    "prerequisites": ["AI201", "MATH201", "STAT210"],
+    "semesters_offered": ["Fall 2026"],
+    "tags": ["ai", "machine learning", "ml"]
+  },
+  {
+    "course_code": "AI320",
+    "title": "Natural Language Processing",
+    "credits": 3,
+    "schedule": [["Tue", "12:30", "14:00"], ["Thu", "12:30", "14:00"]],
+    "description": "Text processing, embeddings, sequence models, and LLM basics.",
+    "prerequisites": ["AI201"],
+    "semesters_offered": ["Spring 2027"],
+    "tags": ["ai", "nlp", "language"]
+  },
+  {
+    "course_code": "AI330",
+    "title": "Computer Vision",
+    "credits": 3,
+    "schedule": [["Tue", "11:00", "12:30"], ["Thu", "11:00", "12:30"]],
+    "description": "Image processing, feature extraction, and deep vision models.",
+    "prerequisites": ["AI201"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["ai", "vision", "elective"]
+  },
+  {
+    "course_code": "AI410",
+    "title": "Deep Learning",
+    "credits": 3,
+    "schedule": [["Mon", "09:30", "11:00"], ["Wed", "09:30", "11:00"]],
+    "description": "Neural network optimization, CNNs, transformers, and deployment.",
+    "prerequisites": ["AI301"],
+    "semesters_offered": ["Spring 2027"],
+    "tags": ["ai", "deep learning", "elective"]
+  },
+  {
+    "course_code": "AI430",
+    "title": "AI Systems Design",
+    "credits": 3,
+    "schedule": [["Tue", "14:30", "16:00"], ["Thu", "14:30", "16:00"]],
+    "description": "Production AI pipelines, evaluation, retrieval, and agent systems.",
+    "prerequisites": ["AI301", "CS230"],
+    "semesters_offered": ["Spring 2027"],
+    "tags": ["ai", "systems", "agents", "elective"]
+  },
+  {
+    "course_code": "DS350",
+    "title": "Data Mining",
+    "credits": 3,
+    "schedule": [["Mon", "12:30", "14:00"], ["Wed", "12:30", "14:00"]],
+    "description": "Association rules, clustering, data pipelines, and pattern discovery.",
+    "prerequisites": ["AI201", "STAT210"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["data mining", "ai", "elective"]
+  },
+  {
+    "course_code": "SE310",
+    "title": "Software Engineering",
+    "credits": 3,
+    "schedule": [["Mon", "10:30", "12:00"], ["Wed", "10:30", "12:00"]],
+    "description": "Team-based software delivery, architecture, and testing.",
+    "prerequisites": ["CS102"],
+    "semesters_offered": ["Fall 2026"],
+    "tags": ["software engineering", "project"]
+  },
+  {
+    "course_code": "DB240",
+    "title": "Database Systems",
+    "credits": 3,
+    "schedule": [["Tue", "16:00", "17:15"], ["Thu", "16:00", "17:15"]],
+    "description": "Relational design, SQL, transactions, and indexing.",
+    "prerequisites": ["CS102"],
+    "semesters_offered": ["Fall 2026", "Spring 2027"],
+    "tags": ["database", "data"]
+  },
+  {
+    "course_code": "STAT330",
+    "title": "Applied Regression",
+    "credits": 3,
+    "schedule": [["Tue", "10:45", "12:15"], ["Thu", "10:45", "12:15"]],
+    "description": "Regression modeling, diagnostics, and predictive analysis.",
+    "prerequisites": ["STAT210"],
+    "semesters_offered": ["Fall 2026"],
+    "tags": ["statistics", "regression"]
+  }
 ]

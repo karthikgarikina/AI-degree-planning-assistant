@@ -1,0 +1,16 @@
+{
+  "AI minor": {
+    "required_courses": [
+      "AI301",
+      "AI320"
+    ],
+    "elective_count": 1,
+    "elective_options": [
+      "AI330",
+      "AI410",
+      "AI430",
+      "DS350"
+    ],
+    "max_credits_per_semester": 9
+  }
+}
