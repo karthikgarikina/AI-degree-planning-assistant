@@ -18,6 +18,21 @@ services:
         "Plan my next two semesters to finish the AI minor."
       ]
 
+  frontend:
+    build: .
+    container_name: degree_planner_frontend
+    depends_on:
+      ollama:
+        condition: service_healthy
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    entrypoint: ["streamlit", "run", "app.py"]
+    command: ["--server.port=8501", "--server.address=0.0.0.0"]
+
   ollama:
     image: ollama/ollama
     container_name: degree_planner_ollama

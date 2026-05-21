@@ -65,10 +65,15 @@ cp .env.example .env
 
 ## 1️⃣ 🐳Docker Setup (Recommended)
 
-### Build & Run
-
+### Run the Web Frontend (New!)
 ```
-docker-compose up --build          # this will go with default goal and transcript.
+docker-compose up --build frontend
+```
+Then open your browser to [http://localhost:8501](http://localhost:8501)
+
+### Run the CLI
+```
+docker-compose up --build app          # this will go with default goal and transcript.
 ```
 
 ### Run Custom Command
@@ -89,7 +94,12 @@ pip install -r requirements.txt
 
 ---
 
-### Run Locally
+### Run Locally (Web UI)
+```
+streamlit run app.py
+```
+
+### Run Locally (CLI)
 
 ```
 python main.py   --transcript ./data/sample_transcript.txt   --goal "Plan my next two semesters to finish the AI minor"

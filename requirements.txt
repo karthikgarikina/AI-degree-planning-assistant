@@ -7,3 +7,4 @@ loguru
 pdfplumber
 requests
 python-dotenv
+streamlit
