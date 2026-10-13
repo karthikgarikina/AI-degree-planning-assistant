@@ -24,8 +24,8 @@ class CatalogCourse(Course):
 
 class Semester(BaseModel):
     semester_name: str
-    courses: List[Course] = Field(default_factory=list)
     max_credits: int = 18
+    courses: List[Course] = Field(default_factory=list)
 
     @validator("courses")
     def check_credit_limit(cls, courses: List[Course], values: Dict[str, int]) -> List[Course]:
